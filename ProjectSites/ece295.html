@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Hisham's Site</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../assets/img/sitecon.png" rel="icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Poppins&family=Raleway&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="../assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="../assets/img/pfp.jpeg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="../index.html" class="logo d-flex align-items-center justify-content-center">
+      <h1 class="sitename">Hisham Kaleem</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="https://www.linkedin.com/in/hishamkaleem/" target="_blank" rel="noopener noreferrer" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/hishamkaleem27" target="_blank" rel="noopener noreferrer" class="github"><i class="bi bi-github"></i></a>
+      <a href="https://www.instagram.com/hish.kal/" target="_blank" rel="noopener noreferrer" class="instagram"><i class="bi bi-instagram"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="../index.html#hero"><i class="bi bi-house navicon"></i> Home</a></li>
+        <li><a href="../index.html#about"><i class="bi bi-person navicon"></i> About Me</a></li>
+        <li><a href="../index.html#experience"><i class="bi bi-gear navicon"></i> Experience</a></li>
+        <li><a href="../index.html#projects"><i class="bi bi-rocket-takeoff navicon"></i> Projects</a></li>
+        <li><a href="../index.html#cert"><i class="bi bi-star navicon"></i> Certifications</a></li>
+        <li><a href="../index.html#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <!-- ECE295 Experience Section -->
+    <section id="werl" class="about section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>ECE295 Course Project⚡</h2>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="../assets/img/SiteImages/295Img/diagram.png" class="img-fluid border border-dark" alt="">
+          </div>
+          <div class="col-lg-8 content">
+            <h3><strong>Hardware Design of an SDR RX Reciever Chain 📡</strong></h3>
+            <p>
+              For my ECE295 (Hardware Design and Communication) course project, me and my group of three were tasked with 
+              <strong>designing from scratch, assembling, and testing/validating an RX reciever chain</strong> to be integrated with five other subsystems to form a complete, functioning Software 
+              Defined Radio (SDR). Our reciever chain recieves raw, unfiltered signals from an antenna and passes them through a <strong>
+               limiter circuit</strong> to protect board elements from high voltages, a <strong>bandpass filter</strong> to pass through
+               signals only in the 8-16 MHz range, two <strong>quadrature mixers</strong> to mix signals and two <strong>lowpass filter
+               + amplifier </strong> configurations to further filter signals and amplify them before transmitting signals to another subsystem
+            </p>
+          </div>
+          <h3><strong>PCB Design and Assembly 📟🛠️</strong></h3>
+            <p>
+              After creating detailed electrical schematics for each subcomponent of the reciever chain as well as power and I/O, the team  
+              utilized <strong>Altium CAD</strong> to design the <strong>PCB layout</strong> shown below. I was in charge of placing and 
+              arranging component footprints in a space-efficient manner as well as routing the majority of traces on the board and 
+              introducing power/ground planes. When it came to assembly, I also soldered the majority of the through-hole and SMD components
+            </p>
+        </div>
+      </div>
+
+     <div class="d-flex" style="width: 100%;">
+
+        <div class="d-flex flex-column" style="width: 50%;">
+          <img src="../assets/img/SiteImages/295Img/295_layout.png" alt="" class="border border-dark mb-2" style="width: 100%; height: 40%;">
+          <img src="../assets/img/SiteImages/295Img/295 PCB.png" alt="" class="border border-dark" style="width: 100%; height: 45%;">
+        </div>
+
+        <div style="width: 50%;">
+          <img src="../assets/img/SiteImages/295Img/295PCB.jpeg" alt="" class="border border-dark" style="width: 100%; height: 86.4%;">
+        </div>
+      </div>
+
+      <div class="container">
+        <h3><strong>Testing and Validation 🧪✅</strong></h3>
+
+        <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-12">
+            <p class="text-start">
+              In order to test our reciever chain and ensure that it had met <strong>Interface Control Document (ICD)</strong> requirements,
+              our group used a combination of manual and automated testing procedures. Manual testing involved utilizing <strong>oscilloscopes,
+              DMMs, and waveform generators </strong> connected to our reciever to pass waveforms of varying frequencies and amplitudes and ensure
+              functionality of the reciever subcomponents. To further validate our tests, we modified and executed test scripts in <strong>
+              Python</strong> that utilize the <strong>PyVisa library</strong> to remotely connect to the measurement devices and perform
+              amplitude/frequency sweeps with hundreds of test points. An example of a graph generated by the test scripts for our lowpass
+              filter (cutoff ~100 kHz) is shown below. All in all, our system was <strong>one of 18/74 groups</strong> that integrated succesfullly with other
+              subsystems to form the whole radio seen in the bottom right (our subsystem is behind the large one in the middle so it isn't visible
+              here)!
+              
+            </p>
+          </div>
+        </div>
+
+      <div class="d-flex" style="width: 100%;">
+  <img src="../assets/img/SiteImages/295Img/lpf.png" alt="" class="border border-dark me-2" style="width: 50%; height: auto;">
+  <img src="../assets/img/SiteImages/295Img/radio.jpg" alt="" class="border border-dark" style="width: 50%; height: auto;">
+</div>
+      <!-- Back Button -->
+      <div class="text-center">
+        <a class="btn btn-outline-primary mt-3" href="../index.html#projects">← Back to Projects</a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+      <div class="copyright text-center">
+        <p>© <span>Copyright</span> <strong>Hisham Kaleem.</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href="https://themewagon.com">ThemeWagon</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+  <!-- Init AOS -->
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
