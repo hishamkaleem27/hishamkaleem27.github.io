@@ -118,11 +118,13 @@
         <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-8">
             <p class="text-start">
-              The device utilizes a Feather M0 Datalogger to control and obtain data from the connected <strong>KY040 Rotary Encoder, 
-              MG996R Continuous Servo Motor,</strong> and <strong>HX711 load cell + amplifier.</strong> Loaded onto this Feather is
+              The device utilizes a Feather M0 Datalogger to control and obtain analog data from the connected <strong>KY040 Rotary Encoder, 
+              MG996R Continuous Servo Motor,</strong> and <strong>HX711 load cell/amplifier.</strong> Loaded onto this Feather is
               a script written in <strong>Arduino C++</strong> that utilizes the servo and HX711 libraries to calibrate and obtain data
-              from the load cell, control motor rotation, and obtain and output encoder pulses. The load cell/encoder data is also
-              converted to real-world distances in the script for accurate plotting/conversion to densities. A research poster that I presented at the annual 
+              from the load cell, control motor rotation, and obtain encoder pulse data. Once obtained, the load cell/encoder data is
+              converted to real-world force measurements/distances in the script and is incrementally outputed to the 
+              serial monitor where the <strong>CoolTerm</strong> application stores/exports data in a .txt file for multimodal use 
+              (excel, parsing, etc.). A research poster that I presented at the annual 
               <em>Undergraduate Engineering Research Day (UnERD) </em> at UofT summarizing the project is shown below, as well as a GitHub link 
               to the C++ script!
             </p>
